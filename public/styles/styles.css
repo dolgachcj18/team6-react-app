@@ -113,3 +113,36 @@ body, html {
   color: #333; /* Dark text color */
   font-weight: bold;
 }
+
+/* Styles for Sign Out Button */
+
+.header {
+  background-color: #4e119e; /* Dark purple */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white; 
+}
+
+.sign-out-button {
+  background-color: #ddd; /* Set your preferred default color */
+  color: white; /* Text color */
+  border: none; /* No borders */
+  padding: 8px 16px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor indicates clickable */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text for visibility */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+
+.sign-out-button {
+  background-color: #ddd !important;
+  color: #333 !important;
+}
+
+.sign-out-button:hover {
+  background-color: #ddddddb7 !important;
+}

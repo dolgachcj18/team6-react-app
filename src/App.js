@@ -16,14 +16,14 @@ function App({ signOut }) {
 
     <div class="header">
       <h1>Warhawk Analytics</h1>
- 
+      <Button onClick={signOut} className="sign-out-button">Sign Out</Button>
     </div>
     
     <div class="main-body">
       <div class="overlay"></div>
       <div class="dropdown">
       
-        <button>Choose an MLB Baseball team</button>
+        <button>Choose an MLB Baseball team:</button>
       
     <div class="dropdown-content">
   
@@ -82,9 +82,9 @@ function App({ signOut }) {
        </div>
       </div>
     
-  
-      <Button onClick={signOut}>Sign Out</Button>
-   
+ 
+      
+
   </div>
   );
 }
