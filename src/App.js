@@ -15,7 +15,9 @@ function App({ signOut }) {
     <div>
 
     <div class="header">
-      <h1>Warhawk Analytics</h1>
+      <h1>
+      <img src={`${process.env.PUBLIC_URL}/media/logo.png`} alt="Logo" style={{ height: '80px', marginRight: '100px' }} /> 
+      </h1>
       <Button onClick={signOut} className="sign-out-button">Sign Out</Button>
     </div>
     
