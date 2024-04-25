@@ -1,0 +1,104 @@
+/* team_style.css For team styles */ 
+
+/* Reset margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  color: black; /* Default text color */
+  background: #f0f0f0; /* Light grey background for the page */
+}
+
+/* Header styles */
+
+.header-link {
+    text-decoration: none; /* Removes underline from the link */
+    color: white; /* Sets the link color to white */
+    display: inline-block; /* Allows size and margin adjustments */
+}
+.header {
+  background-color: #4e119e; /* Dark purple */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* Increased padding for taller header */
+}
+
+.header-left h1 {
+  font-size: 2em; /* Increased font size for larger text */
+}
+
+.header-right {
+  margin-right: 5%; /* Adjust as necessary */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown button {
+  background-color: #e6e6e6; /* Gray */
+  color: black;
+  padding: 12px 18px; /* Increased padding for larger button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Increased font size for larger text */
+  outline: none;
+  width: 300px; /* Increased width for larger dropdown */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+  overflow-y: auto;
+  max-height: 400px; /* Adjust if necessary */
+  width: 300px; /* Match the button's width */
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown button:focus + .dropdown-content {
+  display: block;
+}
+
+/* Dropdown link styles */
+.dropdown-content a {
+  color: black;
+  padding: 10px 15px; /* Increased padding for larger links */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Divider and header styles within the dropdown */
+.dropdown-divider, .dropdown-header {
+  padding: 6px 10px; /* Increased padding for larger dividers and headers */
+  background-color: #ddd;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+.dropdown-header {
+  background-color: #ccc; /* Slightly lighter for distinction */
+}
+
+/* Main body styles */
+.main-body {
+  padding: 20px;
+  background: white; /* Contrasting background for the content */
+}

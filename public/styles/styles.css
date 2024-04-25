@@ -1,0 +1,115 @@
+/* General styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevents scrolling on the body */
+}
+
+/* Header styles */
+.header {
+  background-color: #4e119e; /* Dark purple */
+  padding: 5px 20px; /* Reduced vertical padding for half the height */
+  text-align: left; /* Align text to the left */
+  color: white;
+}
+
+/* Main body styles */
+.main-body {
+  position: relative;
+  background: url(/media/background.jpg) no-repeat center center; /* Background image */
+  background-size: cover;
+  /* 
+    Set the height to fill the remaining space: 
+    100vh (viewport height) - height of the header.
+    Adjust the value if the header height changes.
+  */
+  height: calc(100vh - 10px - 40px); /* Adjust the subtracted value based on the actual header height */
+}
+
+/* Overlay styles */
+.overlay {
+  background-color: rgba(0,0,0,0.6); /* Increased darkness */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(8px); /* Increased blurring effect */
+  -webkit-filter: blur(8px); /* For Safari and older Chrome browsers */
+}
+
+/* Dropdown container styles */
+.dropdown {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Ensure the dropdown is above the overlay */
+}
+
+/* Style for the dropdown button */
+.dropdown button {
+  background-color: #e6e6e6; /* Gray */
+  color: black; /* Text color */
+  padding: 10px 15px; /* Size of the padding inside the button */
+  border: none; /* No border for a flat design */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor to indicate it's clickable */
+  outline: none; /* Remove the outline to avoid default browser styles */
+  width: 600px; /* The width of the button, adjust as needed */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for depth */
+  text-align: left; /* Align text to the left */
+}
+
+/* Hover state for the dropdown button */
+.dropdown button:hover {
+  background-color: #cccccc; /* Lighter shade of gray for hover state */
+}
+
+/* Dropdown content styles - match button width */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow-y: auto; /* Enables vertical scrolling */
+  max-height: 400px; /* Maximum height before scrolling */
+  width: 600px; /* Match the width of the dropdown button */
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown link styles */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover state for dropdown links */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Divider and header styles within the dropdown */
+.dropdown-divider {
+  padding: 5px 10px;
+  background-color: #f2f2f2; /* Light grey background */
+  color: #333; /* Dark text color */
+  text-align: center;
+  font-weight: bold;
+}
+
+.dropdown-header {
+  padding: 5px 10px;
+  background-color: #ddd; /* Medium grey background */
+  color: #333; /* Dark text color */
+  font-weight: bold;
+}
