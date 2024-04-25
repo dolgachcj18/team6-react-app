@@ -15,7 +15,7 @@ body, html {
 }
 
 .logo {
-  width: 1000px; /* Adjust the size of your logo */
+  width: 700px; /* Adjust the size of your logo */
   height: 100px; /* Set a height for the logo */
   background-image: url('/media/Logo.png'); /* Path to your logo image */
   background-size: contain; /* Ensures the image fits within the div */
