@@ -15,9 +15,9 @@ body, html {
 }
 
 .logo {
-  width: 80px; /* Adjust the size of your logo */
+  width: 1000px; /* Adjust the size of your logo */
   height: 100px; /* Set a height for the logo */
-  background-image: url('/public/media/Logo.png'); /* Path to your logo image */
+  background-image: url('/media/Logo.png'); /* Path to your logo image */
   background-size: contain; /* Ensures the image fits within the div */
   background-repeat: no-repeat; /* Prevents image from repeating */
   margin-right: 20px; /* Space between the logo and the text */
