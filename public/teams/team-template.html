@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Name - MLB</title>
+    <title>Chicago Cubs - MLB</title>
     <link rel="stylesheet" href="/styles/team_style.css">
+    <style>
+    .secondary-header{
+    background-color: #0E3386;}</style>
 </head>
 <body>
 
 <div class="header">
     <div class="header-left">
-            <h1>Team Name</h1>
+        <div class="logo"></div>
     </div>
     <div class="header-right">
-        <div class="dropdown">
+        <Button onClick={signOut} className="sign-out-button">Sign Out</Button>
+    </div>
+</div>
+
+<!-- New header for logo and dropdown -->
+<div class="header secondary-header">
+    <div class="header-left">
+        <img src="/media/logos/cubs_logo.png" alt="Chicago Cubs" class="team-logo">
+    </div>
+    <div class="header-right">
+            <div class="dropdown">
             <button>Team Name &#x25BC;</button>
             <div class="dropdown-content">
                 <!-- American League -->
@@ -74,8 +87,10 @@
     </div>
 </div>
 
+
+
 <div class="main-body">
-    <!-- Team content goes here -->
+   
 </div>
 
 </body>
