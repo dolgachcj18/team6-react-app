@@ -31,7 +31,7 @@ function App({ signOut }) {
       
   
       <div class="dropdown-header">AL East</div>
-      <a href="/teams/orioles.html">Baltimore Orioles</a>
+      <a href="/teams/balorioles.html">Baltimore Orioles</a>
       <a href="/teams/redsox.html">Boston Red Sox</a>
       <a href="/teams/yankees.html">New York Yankees</a>
       <a href="/teams/rays.html">Tampa Bay Rays</a>
@@ -57,9 +57,9 @@ function App({ signOut }) {
       
 
       <div class="dropdown-header">NL East</div>
-      <a href="/teams/braves.html">Atlanta Braves</a>
-      <a href="/teams/marlins.html">Miami Marlins</a>
-      <a href="/teams/mets.html">New York Mets</a>
+      <a href="/teams/atlbraves.html">Atlanta Braves</a>
+      <a href="/teams/maimarlins.html">Miami Marlins</a>
+      <a href="/teams/nymets.html">New York Mets</a>
       <a href="/teams/phillies.html">Philadelphia Phillies</a>
       <a href="/teams/nationals.html">Washington Nationals</a>
       
