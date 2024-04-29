@@ -39,7 +39,7 @@ function App({ signOut }) {
       
  
       <div class="dropdown-header">AL Central</div>
-      <a href="/public/teams/whitesox.html">Chicago White Sox</a>
+      <a href="/teams/whitesox.html">Chicago White Sox</a>
       <a href="/teams/guardians.html">Cleveland Guardians</a>
       <a href="/teams/tigers.html">Detroit Tigers</a>
       <a href="/teams/royals.html">Kansas City Royals</a>
