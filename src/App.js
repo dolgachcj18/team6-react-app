@@ -33,7 +33,7 @@ function App({ signOut }) {
       <div class="dropdown-header">AL East</div>
       <a href="/teams/orioles.html">Baltimore Orioles</a>
       <a href="/teams/redsox.html">Boston Red Sox</a>
-      <a href="/public/teams/yankees.html">New York Yankees</a>
+      <a href="/teams/yankees.html">New York Yankees</a>
       <a href="/teams/rays.html">Tampa Bay Rays</a>
       <a href="/teams/bluejays.html">Toronto Blue Jays</a>
       
