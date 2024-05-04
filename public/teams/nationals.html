@@ -87,11 +87,45 @@
     </div>
 </div>
 
+<div id="resultContainer"></div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        const teamName = 'Washington Nationals'; // Team name to filter by
+        const apiUrl = 'https://am0t80qv8f.execute-api.us-east-2.amazonaws.com/dev'; // API endpoint URL
 
-<div class="main-body">
-   
-</div>
+        try {
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ teamName }),
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to fetch data. Please try again later.');
+            }
+
+            const data = await response.json();
+            updateResult(data);
+        } catch (error) {
+            displayError(error.message);
+        }
+    });
+
+    function updateResult(data) {
+        const resultContainer = document.getElementById('resultContainer');
+        resultContainer.innerHTML = `
+            <pre>${JSON.stringify(data, null, 2)}</pre>
+        `;
+    }
+
+    function displayError(message) {
+        const resultContainer = document.getElementById('resultContainer');
+        resultContainer.innerHTML = `<p>Error: ${message}</p>`;
+    }
+</script>
 
 </body>
 </html>
